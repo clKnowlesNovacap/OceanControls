@@ -73,7 +73,7 @@ class Ocean_Controls(object):
         # Default is 100
 
         self.ACCS = value
-        string = '@' + str(motor) + ' ACCS ' + str(self.ACCI) + '\r\n'
+        string = '@' + str(motor) + ' ACCS ' + str(self.ACCS) + '\r\n'
         self.port.write(string.encode('utf_8'))
         self.trash = self.port.readline()
         return self.trash 
