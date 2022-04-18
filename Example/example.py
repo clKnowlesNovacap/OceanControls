@@ -8,7 +8,8 @@ def main():
     oc.accs(1,100)
     oc.accf(1,3000)
     while True:
-        oc.rmov(1,10000)
+        oc.rmov(2,-3000)
+        oc.rmov(1,"10000 3000")
         oc.rmov(1,-10000)
 
 def handler(signum, frame):
