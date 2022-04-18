@@ -72,7 +72,7 @@ class Ocean_Controls(object):
         # Sets the initial Frequency for an Axis [Hz]
         # Default is 100
 
-        self.ACCI = value
+        self.ACCS = value
         string = '@' + str(motor) + ' ACCS ' + str(self.ACCI) + '\r\n'
         self.port.write(string.encode('utf_8'))
         self.trash = self.port.readline()
